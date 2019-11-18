@@ -21,7 +21,7 @@ import java.util.Collection;
 public interface Mappings {
 	Collection<String> getNamespaces();
 
-	Collection<ClassEntry> getClassEntries();
-	Collection<FieldEntry> getFieldEntries();
-	Collection<MethodEntry> getMethodEntries();
+	Collection<? extends ClassEntry> getClassEntries();
+	Collection<? extends FieldEntry> getFieldEntries();
+	Collection<? extends MethodEntry> getMethodEntries();
 }
